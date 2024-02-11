@@ -1,0 +1,16 @@
+@media (max-width: 576px) {
+
+	header.hero-img {
+		h1 {
+			font-size: 22px;
+		}
+
+		.hero-text {
+			font-size: 17px;
+
+			.btn-contact {
+				font-size: 14px;
+			}
+		}
+	}
+}
