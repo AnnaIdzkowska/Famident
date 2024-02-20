@@ -70,20 +70,15 @@ nav {
 	font-size: 18px;
 	border-bottom: 0.5px solid rgb(209, 206, 206);
 
+	.navbars {
+		display: flex;
+		flex-direction: column;
 
 		.navbar-info {
-			position: absolute;
-			top: 0;
-			right: 0;
-			display: flex;
+			// display: flex;
 			flex-direction: row;
 			font-size: 15px;
 			color: $main-color;
-			z-index: 15;
-			margin-top: 5px;
-			
-			
-
 		}
 	}
 
@@ -112,68 +107,71 @@ nav {
 		color: $main-color;
 	}
 
+	.navbar-nav {
+		background-color: #fff;
+		position: absolute;
+		right: 0;
+		text-align: center;
+		// width: 45%;
+	}
 
-
-
-.img2 {
-	display: none;
+	.navbar-info {
+		display: none;
+	}
 }
 
 header.hero-img {
-	// position: relative;
-	// height: 100vh;
-	// background-image: url(../img/banersmalljpg.jpg);
-	// background-size: cover;
-	// background-position: center;
-	// background-attachment: fixed;
-	// color: $white;
-	// z-index: 0;
+	position: relative;
+	height: 100vh;
+	background-image: url(../img/famident\ baner\ png.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: $white;
+	z-index: 0;
 
-	// h1 {
-	// 	text-transform: uppercase;
-	// 	font-size: 30px;
-	// }
+	h1 {
+		text-transform: uppercase;
+		font-size: 30px;
+	}
 
-	// .hero-shadow {
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	background-color: rgb(0, 0, 0, 0.1);
-	// 	z-index: -5;
-	// }
+	.hero-shadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgb(0, 0, 0, 0.1);
+		z-index: -5;
+	}
 
-	// .hero-text {
-	// 	display: flex;
-	// 	justify-content: end;
-	// 	align-items: end;
-	// 	flex-direction: column;
-	// 	height: 100%;
-	// 	font-size: 18px;
+	.hero-text {
+		display: flex;
+		justify-content: end;
+		align-items: end;
+		flex-direction: column;
+		height: 100%;
+		font-size: 18px;
 
-	// 	.btn-contact {
-	// 		padding: 20px 40px;
-	// 		margin: 40px;
-	// 		font-size: 12px;
-	// 		font-weight: 600;
-	// 		outline-color: $main-color;
-	// 		color: $white;
-	// 	}
-	// }
+		.btn-contact {
+			padding: 20px 40px;
+			margin: 40px;
+			font-size: 12px;
+			font-weight: 600;
+			outline-color: $main-color;
+			color: $white;
+		}
+	}
 
-	// .fa-chevron-down {
-	// 	position: absolute;
-	// 	left: 50%;
-	// 	transform: translate(-50%);
-	// 	bottom: 5px;
-	// 	font-size: 30px;
-	// 	color: $white;
-	// }
+	.fa-chevron-down {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+		bottom: 5px;
+		font-size: 30px;
+		color: $white;
+	}
 }
-
-// .background {
-// }
 
 .info {
 	background-color: rgb(52, 58, 114);
@@ -474,13 +472,8 @@ header.hero-img {
 }
 
 @media (max-width: 576px) {
-
 	.navbar-nav {
 		width: 45%;
-	}
-
-	.navbar-info{
-		display: none;
 	}
 
 	.navbar-toggler {
@@ -488,55 +481,49 @@ header.hero-img {
 	}
 
 	header.hero-img {
-		// 	background-image: url(../img/banersmalljpg.jpg);
-		// 	background-size: cover; /* dostosuj wielkość obrazu */
-		// 	// background-position: 50% 50%; /* ustawienie położenia obrazu na środek */
+		background-image: url(../img/famident\ banersmall.jpg);
 
-		// 	h1 {
-		// 		font-size: 22px;
-		// 	}
-
-		// 	.hero-text {
-		// 		font-size: 17px;
-		// 		align-items: center;
-
-		// 		.btn-contact {
-		// 			font-size: 14px;
-		// 		}
-		// 	}
-		// }
-	}
-
-	@media (min-width: 768px) {
-		header.hero-img {
-			// background-image: url(../img/baner.jpg);
-			// background-image: url(.);
-			// h1 {
-			// 	font-size: 38px;
-			// }
-
-			// .hero-text {
-			// 	font-size: 22px;
-
-			// 	.btn-contact {
-			// 		font-size: 15px;
-			// 	}
-			// }
+		h1 {
+			font-size: 22px;
 		}
 
-			
-		.team {
-			&__cards {
-				display: flex;
-				justify-content: center;
-				flex-wrap: wrap;
-			}
+		.hero-text {
+			font-size: 17px;
+			align-items: center;
 
-			&__card {
-				left: 10%;
-
-				margin: 1em;
+			.btn-contact {
+				font-size: 14px;
 			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	header.hero-img {
+		h1 {
+			font-size: 38px;
+		}
+
+		.hero-text {
+			font-size: 22px;
+
+			.btn-contact {
+				font-size: 15px;
+			}
+		}
+	}
+
+	.team {
+		&__cards {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		&__card {
+			left: 10%;
+
+			margin: 1em;
 		}
 	}
 }

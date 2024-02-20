@@ -45,7 +45,7 @@
 				>
 					<i class="fa-solid fa-bars"></i>
 				</button>
-				<div class="collapse navbar-collapse navbars" id="navbarNavAltMarkup">
+				<div class="collapse navbar-collapse navbar-item" id="navbarNavAltMarkup">
 					<div class="navbar-info ms-auto">
 						<p class="px-3"><i class="fa-solid fa-phone"></i> 661 424 189</p>
 						<p class="px-3"><i class="fa-solid fa-phone"></i> 85 744 74 74</p>
@@ -56,30 +56,35 @@
 					<div class="navbar-nav ms-auto">
 						<a class="nav-link px-3 active" href="#home">PORADNIA</a>
 						<a class="nav-link px-3" href="#team">ZESPÓŁ</a>
-						<!-- <a class="nav-link" href="#services">USŁUGI</a> -->
 						<a class="nav-link px-3" href="#prices">CENNIK</a>
 						<a class="nav-link px-3" href="#gallery">GALERIA</a>
 						<a class="nav-link px-3" href="#contact">KONTAKT</a>
+						<a class="nav-link px-3" href="consultations.html">KONSULTACJE</a>
+						<a class="nav-link px-3" href="accomadation.html">NOCLEGI</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 
-		<header id="home" class="hero-img">
-			<div class="hero-text">
-				<h1><span class="blue-text">STOMATOLOGIA</span></h1>
-				<h1><span class="blue-text name">SZYSZKO</span></h1>
-				<p class="mb-5">BIAŁYSTOK</p>
-				<a
+
+		<!-- <header id="home" class="hero-img"> -->
+			<!-- <div class="hero-text"> -->
+				<!-- <a
 					href="#contact"
 					class="btn btn-outline-light btn-contact mt-5 text-uppercase"
 					>UMÓW WIZYTĘ</a
-				>
-			</div>
+				> -->
+			<!-- </div> -->
 
-			<div class="hero-shadow"></div>
-			<a href="#office"><i class="fa-solid fa-chevron-down"></i></a>
-		</header>
+			<!-- <div class="hero-shadow"></div> -->
+			<!-- <a href="#office"><i class="fa-solid fa-chevron-down"></i></a> -->
+		<!-- </header> -->
+
+			<div class="container mycont">
+				<img src="./img/famidentbaner.png" class="img-fluid w-100 img1" alt="">
+
+				<img src="./img/banersmalljpg.jpg" class="img-fluid w-100 img2" alt="">
+			</div>
 
 		<main>
 			<section id="office" class="home py-5">
@@ -88,7 +93,7 @@
 					<div class="underline"></div>
 					<div class="row text-center">
 						<p>rejestracja telefoniczna:</p>
-						<p><i class="fa-solid fa-phone"></i> 661 424 189/ 85 744 74</p>
+						<p><i class="fa-solid fa-phone"></i> 661 424 189/ 85 744 74 74</p>
 						<div class="col-6 mx-auto text-end p-5">
 							<p>PONIEDZIAŁEK</p>
 							<p>WTOREK</p>
@@ -115,48 +120,53 @@
 					</p>
 					<a
 						href="#contact"
-						class="btn btn-outline-light btn-contact mt-5 text-uppercase"
+						class="btn btn-outline-light btn-contact text-uppercase m-5"
 						>UMÓW WIZYTĘ</a
 					>
 				</div>
 			</section>
 
-			<section id="team" class="team py-3">
-				<div class="container">
+			<section id="team" class="team py-5">
+				<div class="wrapper">
 					<h2 class="section-title">LEKARZE</h2>
 					<div class="underline"></div>
 
-					<div class="row team-card">
-						<div class="card" onclick="void(0)" style="width: 27rem">
-							<img src="./img/Teresa.png" class="card-img-top" alt="kobieta" />
-							<div class="card-body">
-								<h5 class="card-title">dr n. med. Teresa Szyszko</h5>
-								<p class="card-text">Stomatologia</p>
-								<a href="#" class="btn btn-primary">O mnie</a>
+
+					<div class="team__cards">
+						<div class="team__card" onclick="void(0)">
+			
+							<div class="team__card-img team__card-img--first">
+								<img src="./img/Teresa.png" alt="">
+								<h3 class="team__card-img-title">dr n. med. Teresa Szyszko</h3>
+								<p>Stomatologia, Paradontologia</p>
+								<p class="team__card-img-info"><i class="fas fa-angle-double-right"></i> Więcej informacji</p>
 							</div>
-							<div class="team-info">
-								<h3 class="team-info-title">dr n. med. Teresa Szyszko</h3>
+
+							<div class="team__card-info">
+								<h3 class="team__card-info-title">dr n. med. Teresa Szyszko</h3>
+								<p class="team__card-info-text">Famident Stomatologia Szyszko to firma prowadzona przez dr n. med. Teresę Szyszko, specjalistę periodontologa od 1997r. Dr Teresa Szyszko jest lekarzem z ogromnym doświadczeniem zawodowym. Przez wiele lat pracowała na Uniwersytecie Medycznym gdzie zdobyła specjalizację z zakresu stomatologii ogólnej oraz tytuł naukowy doktora. Uczestniczyła w wielu szkoleniach podyplomowych, dzięki którym uzyskała kompetencje z zakresu protetyki, ortodoncji i chirurgii stomatologicznej. W swojej pracy kieruje się holistycznym podejściem do zdrowia pacjenta. Wyznaje zasadę, że choroba to brak harmonii nie tylko w ciele ale przede wszystkim w świadomości. Dzięki swojej wiedzy, praktyce i wrodzonym zdolnościom manualnym potrafi w artystyczny wręcz sposób pomóc pacjentom często nawet w tak zwanych „trudnych” przypadkach.</p>
 							</div>
 						</div>
 
-						<div class="card" onclick="void(0)" style="width: 27rem">
-							<img src="./img/Janusz.png" class="card-img-top" alt="kobieta" />
-							<div class="card-body">
-								<h5 class="card-title">dr n. med. Janusz Szyszko</h5>
-								<p class="card-text">Implantologia</p>
-								<a href="#" class="btn btn-primary">O mnie</a>
+						<div class="team__card" onclick="void(0)">
+			
+							<div class="team__card-img team__card-img--second">
+								<img src="./img/Janusz.png" alt="">
+								<h3 class="team__card-img-title">dr n. med. Janusz Szyszko</h3>
+								<p>Implantologia</p>
+								<p class="team__card-img-info"><i class="fas fa-angle-double-right"></i> Więcej informacji</p>
+							</div>
+
+							<div class="team__card-info">
+								<h3 class="team__card-info-title">dr n. med. Janusz Szyszko</h3>
+								<p class="team__card-info-text">Famident Przez prawie 30 lat pracowałem jako patomorfolog na Uniwersytecie Medycznym w Białymstoku oraz w Regionalnym Centrum Onkologii w Białymstoku. Uzyskałem tytuł dr n.med. prowadząc badania nad rakiem płuc. Kilka lat temu po raz pierwszy usłyszałem o alternatywnych sposobach leczenia. Obecnie specjalizuję się w naturalnych metodach uzdrawiania, szczególnie uzdrawianiem dietą oraz psychologicznymi aspektami przyczyn choroby. Udzielam prywatnych konsultacji oraz prowadzę stronę Psychobiologia. Codziennie rozmawiam z pacjentami na temat wpływu ich emocji i traum z przeszłości na choroby, na które cierpią. Zamiast skupiać się całkowicie na skutkach, moja wiedza pozwoliła mi i moim pacjentom odnaleźć rzeczywiste przyczyny ich chorób.</p>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
 
-			<!-- <section id="services" class="services">
-				<div class="container">
-					<h2 class="section-title">USŁUGI</h2>
-					<div class="underline"></div>
-				</div>
-			</section> -->
+				
+			</section> 
+
 
 			<section id="prices" class="prices">
 				<div class="container">
@@ -260,114 +270,110 @@
 							<img src="./img/IMG_4668.jpg" class="img-fluid w-100" alt="dom">
 						</div>
 					</div>
-					<!-- <button type="button" class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button> --> 
 			</div>
 			</section>
-
-		
 
 			<section id="contact" class="contact">
 				<div class="wrapper">
 					<h2 class="section-title">KONTAKT</h2>
 					<div class="underline"></div>
 
-					<div class="container col-5">
-						<form
-							class="row"
-							method="post"
-							action="http://localhost/email/send-email.php"
-						>
-							<div class="row g-3">
-								<div class="col-md">
-									<label for="name" class="form-label">Imię</label>
-									<input
-										type="text"
-										name="name"
-										class="form-control"
-										id="name"
-										autocomplete="off"
-									/>
-									<div class="error-text">Imię nie może być puste</div>
-								</div>
-								<div class="col-md">
-									<label for="lastName" class="form-label">Naziwsko</label>
-									<input
-										type="text"
-										name="lastName"
-										class="form-control"
-										id="lastName"
-										autocomplete="off"
-									/>
-									<div class="error-text">Nazwisko nie może być puste</div>
-								</div>
+					<div class="row">
+						<div class="col-md-1 col-lg-2"></div>
+						<div class="col-md-4 col-lg-2">
+							<div class="border p-5 mb-4 text-center h-100">
+								<h2 class="blue-text">DANE KONTAKTOWE</h2>
+								<p>Famident Stomatologia </p>
+								<p class="mt-5 fw-bold text-uppercase blue-text-light">adres</p>
+								<p>Adama Mickiewicza 48/lok.102</p>
+								<p>15-223 Białystok</p>
+								<p class="mt-5 fw-bold text-uppercase blue-text-light">telefon</p>
+								<p>tel. 85 744 74 74,</p>
+								<p>mob. 661 424 189</p>
+								<p class="mt-5 fw-bold text-uppercase blue-text-light">e-mail</p>
+								<p>famident5@gmail.com</p>
 							</div>
-							<div class="row">
-								<div class="col-md">
-									<label for="email" class="form-label">Email</label>
-									<input
-										type="email"
-										name="email"
-										class="form-control"
-										id="email"
-										autocomplete="off"
-									/>
-									<div class="error-text">Email nie może być pusty</div>
-								</div>
-								<div class="col-md">
-									<label for="phone" class="form-label">Numer telefonu</label>
-									<input
-										type="text"
-										name="phone"
-										class="form-control"
-										id="phone"
-										autocomplete="off"
-									/>
-								</div>
+						</div>
+						<div class="col-md-6 col-lg-6">
+							<div class="border p-5 text-center">
+								<h2 class="blue-text">FORMULARZ KONTAKTOWY</h2>
+								<form class="mt-5" method="post" action="http://localhost/email/send-email.php">
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group mb-4">
+												<label>Imię</label>
+												<input type="text" class="form-control" name="name">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group mb-4">
+												<label>Nazwisko</label>
+												<input type="text" class="form-control" name="lastName">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group mb-4">
+												<label>Telefon</label>
+												<input type="text" class="form-control" name="phone">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group mb-4">
+												<label>Adres mailowy</label>
+												<input type="text" class="form-control" name="email">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group mb-4">
+												<label>Wybierz usługe</label>
+												<select class="form-select" name="subject">
+													<option selected></option>
+													<option>Konsultacje Online</option>
+													<option>Stomatologia jednego dnia</option>
+													<option>Leczenie paradontozy i chorób przyzębia</option>
+													<option>Wizyta kontrolona</option>
+													<option>Leczenie próchnicy</option>
+													<option>Profilaktyka</option>
+													<option>Leczenie kompleksowe</option>
+													<option>Wybielanie zębów</option>
+													<option>Licówki kompozytowe/porcelanowe</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group mb-4">
+												<label>Preferowana data wizyty:</label>
+												<input type="date" class="form-control" name="date">
+											</div>
+										</div>
+										<div class="col-12">
+											<label>Wpisz treść wiadomości</label>
+											<textarea class="form-control" rows="6" name="content"></textarea>
+										</div>
+										<div class="mt-3">
+											<button class="btn btn-primary">Wyślij</button>
+										</div>
+									</div>
+								</form>
 							</div>
-							<div class="row">
-								<div class="col">
-									<label for="date" class="form-label"
-										>Preferowana data wizyty:</label
-									>
-									<input
-										type="date"
-										name="date"
-										class="form-control"
-										id="date"
-									/>
-								</div>
-								<div class="col-md">
-									<label for="hour" class="form-label"
-										>Preferowana godzina wizyty:
-									</label>
-									<select id="hour" name="hour" class="form-select">
-										<option selected>Choose...</option>
-										<option>...</option>
-									</select>
-								</div>
-								<div class="col-12">
-									<label for="subject" class="form-label">Wiadomosc</label>
-									<textarea
-										class="form-control"
-										name="subject"
-										id="subject"
-										rows="3"
-									></textarea>
-									<div class="error-text">Wiadomość nie może być pusta</div>
-								</div>
-							</div>
-							<div class="col-12">
-								<button type="submit" class="btn btn-primary">Wyślij</button>
-							</div>
-						</form>
+						</div>
+						<div class="col-md-1 col-lg-4"></div>
 					</div>
+					</div>
+					<section class="contact-map pb-5">
+						<div class="container d-flex flex-column align-items-center">
+							<p class="py-4">Mapa dojazdu</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8053.701718923727!2d23.165562681376443!3d53.12132660980821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffeac674fc6ab%3A0x2dca6b95a0c2b1ce!2sFamident%20Stomatologia%20Szyszko%20dr%20n.%20med.%20Teresa%20Szyszko!5e0!3m2!1spl!2spl!4v1707757481812!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+					</section>
+			
 				</div>
 			</section>
 
-			<footer class="footer">
-				<p class="footer__bottom-text">
-					&copy; <span class="footer__year"></span> Famident
-				</p>
+	
+
+			<footer class="bg-light text-muted">
+				<p class="py-5 mb-0 text-center"> Copyright &copy; <span class="footer__year"></span> Famident </p>
 			</footer>
 		</main>
 		<script
